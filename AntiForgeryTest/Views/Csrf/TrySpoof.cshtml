@@ -1,0 +1,45 @@
+﻿@model AntiForgeryTest.Models.SpoofModel
+
+@{
+    ViewBag.Title = "TrySpoof";
+}
+
+<h2>Cross Site Request Forgery Spoof</h2>
+<p>
+Using the form below you can attepmt to submit a request forging the anti forgery request token and key.
+</p>
+@using (Html.BeginForm("TrySpoof", "Csrf"))
+{
+    <div class="editor-label"> 
+        @Html.LabelFor(model => model.AntiForgeryKey) 
+    </div> 
+    <div class="editor-field"> 
+        @Html.TextBoxFor(model => model.AntiForgeryKey) 
+        @Html.ValidationMessageFor(model => model.AntiForgeryKey) 
+    </div>
+    
+    <div class="editor-label"> 
+        @Html.LabelFor(model => model.AntiForgeryCookieValue) 
+    </div> 
+    <div class="editor-field"> 
+        @Html.TextBoxFor(model => model.AntiForgeryCookieValue) 
+        @Html.ValidationMessageFor(model => model.AntiForgeryCookieValue) 
+    </div>
+    
+    <input type="submit" value="Spoof" /> 
+    }
+    
+    <br />
+    
+    @{
+        var spoofResult = (string)ViewBag.SpoofResult;
+        
+        if(spoofResult != null){
+            <h1>RESULT</h1>
+            <i>@spoofResult</i>
+        }
+    }
+    
+    
+
+

@@ -1,0 +1,10 @@
+C:\Projects\AntiForgeryTest\AntiForgeryTest\bin\AntiForgeryTest.dll
+C:\Projects\AntiForgeryTest\AntiForgeryTest\bin\AntiForgeryTest.pdb
+C:\Projects\AntiForgeryTest\AntiForgeryTest\bin\EntityFramework.dll
+C:\Projects\AntiForgeryTest\AntiForgeryTest\bin\EntityFramework.xml
+C:\Projects\AntiForgeryTest\AntiForgeryTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\AntiForgeryTest\AntiForgeryTest\obj\Debug\AntiForgeryTest.dll
+C:\Projects\AntiForgeryTest\AntiForgeryTest\obj\Debug\AntiForgeryTest.pdb
+C:\Projects\AntiForgeryTest\AntiForgeryTest\bin\HtmlAgilityPack.dll
+C:\Projects\AntiForgeryTest\AntiForgeryTest\bin\HtmlAgilityPack.pdb
+C:\Projects\AntiForgeryTest\AntiForgeryTest\bin\HtmlAgilityPack.xml

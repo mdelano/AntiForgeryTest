@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "AntiForgeryForm";
+}
+
+<script src="../../Scripts/jquery.cookie.js"></script>
+
+<h2>AntiForgeryForm</h2>
+
+<a href="#" class="getCookie">Get Cookie</a>
+<form action="/AntiForgery/AntiForgeryFormPost" method="post">
+@Html.AntiForgeryToken()
+<input type="submit" value="Submit">
+</form>
+
+<script type="text/javascript">
+    $("a.getCookie").click(function () {
+        console.log("Clicked");
+        GetCookieValue('__RequestVerificationToken_Lw__');
+    });
+    function GetCookieValue(cookieKey) {
+        var cookieValue = $.cookie(cookieKey, null, "/");
+        console.log(cookieValue);
+        
+
+    }
+    
+</script>
